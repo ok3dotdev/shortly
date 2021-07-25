@@ -12,7 +12,7 @@ function Hero() {
                     <p>
                     Build your brand’s recognition and get detailed insights on how your links are performing.
                     </p>
-                    <a className="btn-lg-round" href="/">Get Started</a>
+                    <a className="btn-lg-round" href="#form">Get Started</a>
                 </div>
 
                 <div className="hero_image">

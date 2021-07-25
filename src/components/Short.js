@@ -2,8 +2,11 @@ import React from 'react'
 
 function Short() {
     return (
-        <section className="short">
-            <h1>hello from short</h1>
+        <section id="form" className="container short">
+            <form action="">
+                <input type="text" placeholder="shorten a link here..."/>
+                <a className="lg-rect-btn" href="/">Shorten it!</a>
+            </form>
         </section>
     )
 }
