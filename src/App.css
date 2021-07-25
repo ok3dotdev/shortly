@@ -27,7 +27,7 @@ header {
 }
 
 nav {
-  transform: translateX(-90%);
+  transform: translateX(-50%);
 }
 .account a {
   text-decoration: none;
@@ -70,9 +70,9 @@ nav {
   width: 45%;
 }
 .info h2 {
-  font-size: 4.5rem;
+  font-size: 4rem;
   color: var(--very-dark-blue);
-  line-height: 5.5rem;
+  line-height: 4.6rem;
 }
 .info p {
   color: var(--grayish-violet);
