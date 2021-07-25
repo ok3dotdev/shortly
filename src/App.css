@@ -26,6 +26,9 @@ header {
   color: var(--grayish-violet);
 }
 
+nav {
+  transform: translateX(-90%);
+}
 .account a {
   text-decoration: none;
   font-size: 0.93rem;
@@ -37,8 +40,52 @@ header {
   color: var(--white) !important;
 }
 
+.btn-lg-round {
+  background-color: var(--cyan);
+  padding: 13px 40px;
+  border-radius: 28px;
+}
+
 .btn-round {
   background-color: var(--cyan);
   padding: 8px 23px;
   border-radius: 28px;
 }
+
+/* ************* HERO ************* */
+/* ************* HERO ************* */
+/* ************* HERO ************* */
+
+.hero-container {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  padding-bottom: 10rem;
+}
+.info {
+  width: 50%;
+}
+.hero_image {
+  width: 45%;
+}
+.info h2 {
+  font-size: 4.5rem;
+  color: var(--very-dark-blue);
+  line-height: 5.5rem;
+}
+.info p {
+  color: var(--grayish-violet);
+  margin-bottom: 3rem;
+}
+.info a {
+  text-decoration: none;
+  color: var(--white);
+  font-weight: 700;
+  margin-top: 2rem;
+}
+.info h1 > span {
+  display: block;
+}
+
+/* ********* short ******* */
