@@ -1,0 +1,44 @@
+/* ********* HEADER ********* */
+
+header {
+  width: 100%;
+  height: 7.5rem;
+  padding: 3.1rem 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  /* max-width: 100rem; */
+  margin: 0 auto;
+  padding: 0 10.4rem;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+}
+.links {
+  list-style: none;
+  padding: 0 0.5rem;
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: var(--grayish-violet);
+}
+
+.account a {
+  text-decoration: none;
+  font-size: 0.93rem;
+  font-weight: 700;
+  color: var(--grayish-violet);
+}
+.sign-up {
+  margin-left: 1.5rem;
+  color: var(--white) !important;
+}
+
+.btn-round {
+  background-color: var(--cyan);
+  padding: 8px 23px;
+  border-radius: 28px;
+}
