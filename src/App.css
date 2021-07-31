@@ -9,7 +9,7 @@ header {
 .container {
   display: flex;
   width: 100%;
-  /* max-width: 100rem; */
+  max-width: 100rem;
   margin: 0 auto;
   padding: 0 10.4rem;
   justify-content: space-between;
@@ -150,19 +150,20 @@ form a {
 /* DESKTOP DEVICES */
 @media only screen and (min-width: 992px) {
   body {
-    background-color: green;
+    /* background-color: green; */
   }
 
-  /* HIDE MOBIL;E HAMBURGER ON LARGE DESKTOP */
+  /* HIDE MOBILE HAMBURGER ON LARGE DESKTOP */
   .mobile-nav {
     display: none;
   }
 }
 
 /* TABLET SCREEN DEVICES */
+
 @media only screen and (max-width: 768px) {
   body {
-    background-color: blue;
+    /* background-color: blue; */
   }
   /* HERO SECTION */
   /* .hero-container {
@@ -191,7 +192,36 @@ form a {
     display: none;
   }
 
+  /* REDUCE PADDING ON SIDES */
   .container {
     padding: 0 2rem;
+  }
+
+  /* HERO RESPONSIVENESS */
+  .hero-container {
+    flex-direction: column-reverse;
+    padding-bottom: 8rem;
+  }
+
+  .hero_image {
+    width: 100%;
+  }
+  .info {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3rem;
+  }
+
+  .info_heading {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: center;
+  }
+  .info p {
+    text-align: center;
+    padding-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
