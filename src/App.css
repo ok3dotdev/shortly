@@ -52,6 +52,21 @@ nav {
   border-radius: 28px;
 }
 
+.mobile-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mobile-nav {
+  /* background-color: blue; */
+  width: 5.5vw;
+  height: 23px;
+}
+.line {
+  background-color: black;
+  height: 0.3rem;
+}
+
 /* ************* HERO ************* */
 /* ************* HERO ************* */
 /* ************* HERO ************* */
@@ -69,7 +84,7 @@ nav {
 .hero_image {
   width: 45%;
 }
-.info h2 {
+.info_heading {
   font-size: 4rem;
   color: var(--very-dark-blue);
   line-height: 4.6rem;
@@ -128,4 +143,52 @@ form a {
   text-decoration: none;
   margin-left: 10px;
   font-weight: 700;
+}
+
+/* ************ RESPONSIVE MEDIA QUERIES ******************* */
+
+/* DESKTOP DEVICES */
+@media only screen and (min-width: 992px) {
+  body {
+    background-color: green;
+  }
+
+  /* HIDE MOBIL;E HAMBURGER ON LARGE DESKTOP */
+  .mobile-nav {
+    display: none;
+  }
+}
+
+/* TABLET SCREEN DEVICES */
+@media only screen and (max-width: 768px) {
+  body {
+    background-color: blue;
+  }
+  /* HERO SECTION */
+  /* .hero-container {
+    padding: 0 7rem;
+  } */
+  .info_heading {
+    font-size: 4.5rem;
+    line-height: 4.5rem;
+  }
+}
+
+/* MOBILE SCREEN DEVICES < 600PX */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: var(--white);
+  }
+
+  /* HIDE NAVLINKS ON MOBILE */
+  .account {
+    display: none;
+  }
+  .nav-links {
+    display: none;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
 }

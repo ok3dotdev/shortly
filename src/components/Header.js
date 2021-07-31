@@ -4,7 +4,7 @@ import Logo from '../images/logo.svg'
 function Header() {
     return (
         <header>
-            <div className="container">
+            <div className="container header-container">
 
             <div className="logo">
                 <img className="logo-image" src={Logo} alt="logo" />
@@ -22,7 +22,18 @@ function Header() {
                     <a className="login " href="/">Login</a>
                     <a className="sign-up btn-round" href="/">Sign up</a>
                 </div>
+
+                <div className="mobile-nav">
+                <div className="line"></div>
+                <div className="line"></div>
+                <div className="line"></div>
+                
             </div>
+        
+            </div>
+
+           
+            
 
         </header>
     )
