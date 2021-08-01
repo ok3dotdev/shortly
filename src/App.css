@@ -149,10 +149,6 @@ form a {
 
 /* DESKTOP DEVICES */
 @media only screen and (min-width: 992px) {
-  body {
-    /* background-color: green; */
-  }
-
   /* HIDE MOBILE HAMBURGER ON LARGE DESKTOP */
   .mobile-nav {
     display: none;
@@ -162,13 +158,6 @@ form a {
 /* TABLET SCREEN DEVICES */
 
 @media only screen and (max-width: 768px) {
-  body {
-    /* background-color: blue; */
-  }
-  /* HERO SECTION */
-  /* .hero-container {
-    padding: 0 7rem;
-  } */
   .info_heading {
     font-size: 4.5rem;
     line-height: 4.5rem;
@@ -223,5 +212,24 @@ form a {
     text-align: center;
     padding-top: 1rem;
     margin-bottom: 1rem;
+  }
+
+  /* FORM */
+
+  form {
+    display: flex;
+    flex-direction: column;
+    padding: 22px 22px;
+  }
+
+  form input,
+  form a {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  form a {
+    margin-top: 10px;
+    text-align: center;
   }
 }
