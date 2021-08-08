@@ -3,7 +3,7 @@ import React, {useState} from 'react'
 
 function Short() {
     const [link, setLink] = useState("");
-    const [short, setShort]= useState("");
+    // const [short, setShort]= useState("");
 
     const handleSubmit =(e)=>{
         e.preventDefault();
