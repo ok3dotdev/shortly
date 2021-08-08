@@ -4,6 +4,7 @@ header {
   width: 100%;
   height: 7.5rem;
   padding: 3.1rem 0;
+  background-color: var(--white);
 }
 
 .container {
@@ -71,6 +72,9 @@ nav {
 /* ************* HERO ************* */
 /* ************* HERO ************* */
 
+.hero {
+  background-color: var(--white);
+}
 .hero-container {
   width: 100%;
   display: flex;
@@ -110,12 +114,10 @@ nav {
 
 form {
   background-image: url(./images/bg-shorten-desktop.svg);
-  background-repeat: no-repeat, repeat;
-  background-position: center;
-  background-size: fill;
   background-color: var(--dark-violet);
   padding: 52px 65px;
   width: 100%;
+  max-width: 100rem;
   transform: translateY(-50%);
   border-radius: 10px;
 }
@@ -145,6 +147,106 @@ form a {
   font-weight: 700;
 }
 
+/* STATISTICS */
+.stats-info {
+  text-align: center;
+  width: 100%;
+}
+
+.stats-info h3 {
+  font-size: 2.5rem;
+}
+.stats-info p {
+  color: var(--grayish-violet);
+}
+
+.cards {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+.card {
+  text-align: left;
+  padding: 2rem 2rem;
+  background-color: var(--white);
+  width: 30%;
+  border-radius: 5px;
+}
+
+.stats-container {
+  padding-bottom: 8rem;
+}
+
+.brand {
+  background-color: var(--dark-violet);
+  /* margin: 0 auto; */
+  /* padding: 0.5rem 0.5rem; */
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-90%);
+}
+
+/* BOOST */
+.boost-container {
+  background-image: url(./images/bg-shorten-desktop.svg);
+  background-color: var(--dark-violet);
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.boost-container h3 {
+  font-size: 2.5rem;
+  color: var(--white);
+}
+
+.boost-container a {
+  text-decoration: none;
+  color: var(--white);
+  margin: 0 auto;
+  flex-grow: 0;
+  margin-top: 1rem;
+}
+
+/* FOOTER */
+
+.footer-container {
+  background-color: var(--very-dark-blue);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.footer-nav_links {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+
+.footer-nav_links > ul {
+  color: var(--white);
+  font-weight: 700;
+}
+.footer-nav_links > ul > li {
+  color: var(--background);
+  list-style: none;
+  font-weight: 100;
+}
+
+.footer-nav_links > ul :first-child {
+  margin-top: 1rem;
+}
+
+.footer-sc {
+  margin-right: 1rem;
+}
+
 /* ************ RESPONSIVE MEDIA QUERIES ******************* */
 
 /* DESKTOP DEVICES */
@@ -152,6 +254,10 @@ form a {
   /* HIDE MOBILE HAMBURGER ON LARGE DESKTOP */
   .mobile-nav {
     display: none;
+  }
+
+  .hero-container {
+    min-height: 75vh;
   }
 }
 
@@ -190,10 +296,17 @@ form a {
   .hero-container {
     flex-direction: column-reverse;
     padding-bottom: 8rem;
+    height: 90vh;
   }
 
   .hero_image {
     width: 100%;
+
+    /* min-height: 5vh; */
+  }
+  .heroimage {
+    object-fit: cover;
+    height: 100%;
   }
   .info {
     width: 100%;
