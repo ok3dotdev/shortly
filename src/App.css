@@ -165,14 +165,31 @@ form a {
   margin-top: 3rem;
   justify-content: space-between;
 }
+
+.card2 {
+  transform: translateY(10%);
+  /* display: none; */
+}
+
+.card3 {
+  transform: translateY(20%);
+}
 .card {
   text-align: left;
-  padding: 2rem 2rem;
+  padding: 2rem 1.7rem;
   background-color: var(--white);
   width: 30%;
   border-radius: 5px;
 }
 
+.card p {
+  font-size: 0.9rem;
+  margin-top: 1rem;
+}
+
+.card h2 {
+  font-size: 1.3rem;
+}
 .stats-container {
   padding-bottom: 8rem;
 }
@@ -180,7 +197,7 @@ form a {
 .brand {
   background-color: var(--dark-violet);
   /* margin: 0 auto; */
-  /* padding: 0.5rem 0.5rem; */
+  padding: 2.5rem 2.5rem;
   border-radius: 50%;
   width: 4rem;
   height: 4rem;
@@ -296,7 +313,7 @@ form a {
   .hero-container {
     flex-direction: column-reverse;
     padding-bottom: 8rem;
-    height: 90vh;
+    height: 120vh;
   }
 
   .hero_image {
@@ -344,5 +361,37 @@ form a {
   form a {
     margin-top: 10px;
     text-align: center;
+  }
+
+  /* STATS */
+  .stats-container {
+    background-color: var(--background);
+  }
+
+  .stats-info h3 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .stats-info p {
+    font-size: 0.7rem;
+  }
+
+  .card {
+    width: 100%;
+    text-align: center;
+  }
+  .cards {
+    flex-direction: column;
+    margin: 6rem 0;
+  }
+  .card2 {
+    margin-top: 3rem;
+  }
+  .brand {
+    margin: 0 auto;
+  }
+  .card3 {
+    margin-top: 3rem;
   }
 }

@@ -16,7 +16,7 @@ function Statistics() {
 
 
             <div className="cards">
-                <div className="card">
+                <div className="card card1">
                     <div className="brand">
                     <img src={Image1} alt="" />
 
@@ -26,7 +26,7 @@ function Statistics() {
 
                     </p>
                 </div>
-                <div className="card">
+                <div className="card card2">
                     <div className="brand">
                     <img src={Image2} alt="" />
 
@@ -34,7 +34,7 @@ function Statistics() {
                     <h2>Fully Customizable</h2>               
                     <p>Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.</p>
                 </div>
-                <div className="card">
+                <div className="card card3">
                     <div className="brand">
                         <img src={Image3} alt="" />
 
