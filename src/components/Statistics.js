@@ -10,12 +10,19 @@ function Statistics() {
     return (
         <section className="container stats-container">
 
+
             <div className="stats-info">
+                
+
+               
+
             <h3>Advanced Statistics</h3>
             <p>Track how your links are performing across the web with <br /> our advanced statistics dashboard.</p>
 
 
             <div className="cards">
+            <div className="stats_line"></div>
+
                 <div className="card card1">
                     <div className="brand">
                     <img src={Image1} alt="" />

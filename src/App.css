@@ -149,8 +149,21 @@ form a {
 
 /* STATISTICS */
 .stats-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   text-align: center;
+  max-width: 100rem;
+}
+
+.stats_line {
+  background-color: var(--cyan);
+  height: 0.5rem;
   width: 100%;
+  position: absolute;
+  display: block;
+  z-index: -99;
+  top: 50%;
 }
 
 .stats-info h3 {
@@ -161,25 +174,31 @@ form a {
 }
 
 .cards {
+  position: relative;
   display: flex;
   margin-top: 3rem;
   justify-content: space-between;
 }
 
 .card2 {
-  transform: translateY(10%);
+  transform: translateY(15%);
   /* display: none; */
 }
 
 .card3 {
-  transform: translateY(20%);
+  transform: translateY(30%);
 }
 .card {
   text-align: left;
-  padding: 2rem 1.7rem;
+  /* padding: 2rem 1.7rem; */
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+  padding-left: 1.7rem;
+  padding-right: 1.7rem;
   background-color: var(--white);
   width: 30%;
   border-radius: 5px;
+  position: relative;
 }
 
 .card p {
@@ -192,6 +211,7 @@ form a {
 }
 .stats-container {
   padding-bottom: 8rem;
+  position: relative;
 }
 
 .brand {
@@ -204,7 +224,10 @@ form a {
   display: flex;
   align-items: center;
   justify-content: center;
-  transform: translateY(-90%);
+  transform: translateY(-60%);
+  z-index: 9999;
+  position: absolute;
+  top: -0.055%;
 }
 
 /* BOOST */
@@ -313,7 +336,7 @@ form a {
   .hero-container {
     flex-direction: column-reverse;
     padding-bottom: 8rem;
-    height: 120vh;
+    height: 150vh;
   }
 
   .hero_image {
@@ -374,12 +397,19 @@ form a {
   }
 
   .stats-info p {
-    font-size: 0.7rem;
+    font-size: 1rem;
+  }
+  .stats-info br {
+    display: none;
   }
 
   .card {
     width: 100%;
     text-align: center;
+    z-index: 10000;
+  }
+  .card p {
+    font-size: 1rem;
   }
   .cards {
     flex-direction: column;
@@ -390,8 +420,48 @@ form a {
   }
   .brand {
     margin: 0 auto;
+    left: 38%;
+    right: 50%;
   }
   .card3 {
     margin-top: 3rem;
+  }
+  .stats_line {
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 0.5rem;
+    background-color: var(--cyan);
+    z-index: 100;
+    left: 50%;
+  }
+
+  /* BOOST */
+  .boost-container h3 {
+    font-size: 1.5rem;
+  }
+
+  .btn-lg-round {
+    padding: 15px 40px;
+  }
+  .boost-container {
+    padding: 2rem 0;
+  }
+  .boost-container a {
+    font-size: 1rem;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    padding: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-nav_links {
+    padding: 2rem 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
 }
