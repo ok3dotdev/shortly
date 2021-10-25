@@ -25,6 +25,11 @@ header {
   font-size: 0.93rem;
   font-weight: 700;
   color: var(--grayish-violet);
+  cursor: pointer;
+}
+
+.links:hover {
+  color: var(--dark-violet);
 }
 
 nav {
@@ -498,7 +503,7 @@ form a {
     width: 0.5rem;
     background-color: var(--cyan);
     z-index: 100;
-    left: 50%;
+    left: 45%;
   }
 
   /* BOOST */
